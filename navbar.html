@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBAR with FLEX (Flexbox)</title>
+
+    <style>
+
+        body{
+            background-color: #333;
+        }
+        .navbar ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #111;
+            
+            display: flex;
+            justify-content: stretch;
+            
+        }
+
+        @media(max-width: 1000px){
+            .navbar ul {
+                flex-direction: column;
+            }
+
+        }
+        .navbar li{
+            border: 1px solid red;
+            padding: 0.5em;
+        }
+         .navbar .brand {
+             font-size: 30px;
+             padding: 0.5em;
+             margin: 0.5em;
+         }
+        .navbar a{
+            text-decoration: none;
+            color: white;
+            
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+
+        <!---flex container-->
+        <ul>
+            <li class="brand"><a href="">BRAND</a></li>
+            <li><a href="">Dolor</a></li>
+            <li><a href="">Quam </a></li>
+            <li><a href="">Odit</a></li>
+            <li><a href="">Officia.</a></li>
+            <li><a href="">repellendus.</a></li>
+            <li><a href="">Neque</a></li>
+        </ul>
+        <!---flex container-->
+
+    </nav>
+
+
+    
+</body>
+</html>
